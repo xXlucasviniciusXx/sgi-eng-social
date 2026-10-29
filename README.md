@@ -18,6 +18,10 @@ Login padrão: **admin / admin** (troque em produção via `ADMIN_USER` / `ADMIN
 - **Painel:** http://localhost:3000/eng-social/
 - **Caixa de saída (dev):** http://localhost:3000/eng-social/inbox
 
+> 📘 **Para integrar no SGI:** veja o **[Guia de Integração](docs/INTEGRACAO.md)**
+> (arquitetura, mapa de rotas, modelo de dados, pontos de integração e checklist
+> de produção). Para contribuir: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
 ## Integração como módulo do SGI
 
 O módulo é um **plugin Fastify** montado sob um prefixo:
