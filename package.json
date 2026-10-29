@@ -1,0 +1,22 @@
+{
+  "name": "sgi-eng-social",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Modulo de Simulacao de Phishing / Conscientizacao em Seguranca - MVP integravel ao SGI",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite --disable-warning=ExperimentalWarning src/app.js",
+    "seed": "node --experimental-sqlite --disable-warning=ExperimentalWarning src/seed.js",
+    "reset": "node -e \"require('fs').rmSync('data/app.db',{force:true})\" && npm run seed",
+    "purge": "node --experimental-sqlite --disable-warning=ExperimentalWarning src/purge.js"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.1.5",
+    "@fastify/formbody": "^8.0.2",
+    "fastify": "^5.2.1",
+    "nodemailer": "^10.3.1"
+  }
+}
